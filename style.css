@@ -1,111 +1,117 @@
 /* ===== Базовые стили страницы ===== */
 body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #eef1f6;
-  font-family: system-ui, "Segoe UI", sans-serif;
-  color: #222;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef1f6;
+    font-family: system-ui, "Segoe UI", sans-serif;
+    color: #222;
 }
 
 /* ===== Карточка-визитка ===== */
 .card {
-  /* БАГ №4: у карточки нет белого фона. Одно свойство написано с опечаткой. */
-  bacground: #ffffff;
+    /* БАГ №4: у карточки нет белого фона. Одно свойство написано с опечаткой. */
+    background: #ffffff;
 
-  width: 360px;
-  padding: 32px;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  text-align: center;
+    width: 360px;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
 }
 
 .avatar {
-  font-size: 56px;
-  line-height: 1;
+    font-size: 56px;
+    line-height: 1;
 }
 
 .name {
-  color: #1c2333;
-  font-size: 28px;
-  margin: 8px 0 2px;
+    color: #1c2333;
+    font-size: 28px;
+    margin: 8px 0 2px;
 }
 
 .role {
-  /* БАГ №5: строка-роль под именем не выделяется — она должна быть фиолетовой и полужирной.
-     Потеряна одна «;». */
-  color: #6c5cf0
-  font-weight: 700;
-  font-size: 16px;
-  margin: 0 0 16px;
+    /* БАГ №5: строка-роль под именем не выделяется — она должна быть фиолетовой и полужирной.
+       Потеряна одна «;». */
+    color: #6c5cf0;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 0 16px;
 }
 
 .bio {
-  color: #555;
-  line-height: 1.5;
+    color: #555;
+    line-height: 1.5;
 }
 
 .subtitle {
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #999;
-  margin-top: 24px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-top: 24px;
 }
 
 .interests {
-  text-align: left;
-  display: inline-block;
-  color: #333;
-  line-height: 1.7;
+    text-align: left;
+    display: inline-block;
+    color: #333;
+    line-height: 1.7;
 }
 
 .actions {
-  margin-top: 24px;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 .btn {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 10px;
-  background: #6c5cf0;
-  color: #fff;
-  font-size: 14px;
-  cursor: pointer;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #6c5cf0;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .btn-ghost {
-  background: #eceafd;
-  color: #6c5cf0;
+    background: #eceafd;
+    color: #6c5cf0;
 }
 
+.btn-ghost.liked {
+    background: #ffe4e6;
+    color: #e11d48;
+}
+
+
 .contact {
-  margin-top: 16px;
-  font-size: 16px;
+    margin-top: 16px;
+    font-size: 16px;
 }
 
 /* спрятанный элемент */
 .hidden {
-  display: none;
+    display: none;
 }
 
 /* ===== Тёмная тема (её включает кнопка «Тема») ===== */
 body.dark {
-  background: #1c2333;
-  color: #eee;
+    background: #1c2333;
+    color: #eee;
 }
 
 body.dark .card {
-  background: #2a3350;
-  box-shadow: none;
+    background: #2a3350;
+    box-shadow: none;
 }
 
 body.dark .bio,
 body.dark .interests {
-  color: #cfd6e6;
+    color: #cfd6e6;
 }
