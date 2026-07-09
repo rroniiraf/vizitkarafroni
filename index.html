@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Моя визитка</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя визитка</title>
 
-  <!-- БАГ №1: стили не подключаются. Проверь имя файла — как он называется на самом деле? -->
-  <link rel="stylesheet" href="styles.css">
+    <!-- БАГ №1: стили не подключаются. Проверь имя файла — как он называется на самом деле? -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="card">
+<main class="card">
     <!-- TODO: замени на свои инициалы или любимое эмодзи -->
-    <div class="avatar">🙂</div>
+    <div class="avatar">🐳</div>
 
     <!-- TODO: впиши своё имя -->
-    <h1 class="name">Имя Фамилия</h1>
+    <h1 class="name">Рания Рафикова</h1>
 
     <!-- TODO: впиши, кто ты -->
-    <p class="role">Студент 1 курса · будущий фронтендер</p>
+    <p class="role">Студентка 1 курса · будущий фронтендер и второкурсник ,пж, хоть бы не фейк</p>
 
     <!-- TODO: пара предложений о себе -->
     <p class="bio">
-      Здесь коротко о себе: чем занимаешься, что нравится, что хочешь освоить.
+        Здесь коротко обо мне - очень страшно писать код и ошибаться, работаю над этим.
     </p>
 
     <h2 class="subtitle">Чем увлекаюсь</h2>
     <ul class="interests">
-      <!-- TODO: впиши свои увлечения (можно больше трёх) -->
-      <li>Веб-разработка</li>
+        <!-- TODO: впиши свои увлечения (можно больше трёх) -->
+        <li>Читать много</li>
 
-      <!-- БАГ №2: этот пункт списка не отображается как надо. Точно ли это тег списка? -->
-      <il>Музыка</il>
+        <!-- БАГ №2: этот пункт списка не отображается как надо. Точно ли это тег списка? -->
+        <li>Ловить гиперфикс</li>
 
-      <li>Спорт</li>
+        <li>Баскетбол</li>
     </ul>
 
     <div class="actions">
-      <!-- БАГ №3: id этой кнопки не совпадает с тем, что ищет script.js.
-           Кнопка «Показать контакт» не работает (загляни в консоль браузера — F12). -->
-      <button id="contact-btn" class="btn">Показать контакт</button>
+        <!-- БАГ №3: id этой кнопки не совпадает с тем, что ищет script.js.
+             Кнопка «Показать контакт» не работает (загляни в консоль браузера — F12). -->
+        <button id="contact-btn" class="btn">Показать контакт</button>
 
-      <button id="theme-btn" class="btn btn-ghost">🌙 Тема</button>
+        <button id="theme-btn" class="btn btn-ghost">🌙 Тема</button>
+    </div>
+
+    <button id="like-btn" class="btn btn-ghost">🤍 <span id="like-count">0</span></button>
     </div>
 
     <!-- почта спрятана, пока не нажмут кнопку -->
     <p id="contact" class="contact hidden">
-      <!-- TODO: впиши свою почту -->
-      ✉️ me@example.com
+        <!-- TODO: впиши свою почту -->
+        ✉️ rafrafroni@gmail.com
     </p>
-  </main>
+</main>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
